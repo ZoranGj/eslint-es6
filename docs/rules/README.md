@@ -175,3 +175,8 @@ The following rules are included for compatibility with [JSHint](http://jshint.c
 * [no-bitwise](no-bitwise.md) - disallow use of bitwise operators (off by default)
 * [no-plusplus](no-plusplus.md) - disallow use of unary operators, `++` and `--` (off by default)
 
+## Ember
+
+The following rules are specific to JavaScript using [EmberJS](http://emberjs.com/) or [Ember-CLI](http://www.ember-cli.com/).
+
+* [em-observer-run-once](em-observer-run-once.md) - disallow observers watching multiple properties outside the Ember run-loop
