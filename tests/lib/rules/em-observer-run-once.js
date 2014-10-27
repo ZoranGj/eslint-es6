@@ -1,6 +1,7 @@
 /**
  * @fileoverview Observers watching multiple properties should utilize the Ember run-loop
  * @author Jordan Hawker
+ * @copyright 2014 Jordan Hawker. All rights reserved.
  */
 "use strict";
 
