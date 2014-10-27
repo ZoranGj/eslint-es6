@@ -28,6 +28,7 @@ eslintTester.addRuleTest("lib/rules/em-observer-run-once", {
     ],
 
     invalid: [
-        { code: "var obj = Ember.Object.extend({ x: function () { this.set('stuff', 'things'); }.observes('foo', 'bar') });", errors: [{ message: "Observer watching multiple properties without using Ember.run.once", type: "CallExpression" }] }
+        { code: "var obj = Ember.Object.extend({ x: function () { this.set('stuff', 'things'); }.observes('foo', 'bar') });", errors: [{ message: "Observer watching multiple properties without using Ember.run.once", type: "CallExpression" }] },
+        { code: "var obj = Ember.Object.extend({ x: function xObserver() { this.set('stuff', 'things'); }.observes('foo', 'bar', 'noms') });", errors: [{ message: "Observer watching multiple properties without using Ember.run.once", type: "CallExpression" }] }
     ]
 });

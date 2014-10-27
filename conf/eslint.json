@@ -148,6 +148,6 @@
         "wrap-regex": 0,
         "yoda": [2, "never"],
 
-        "em-observer-run-once": 0
+        "em-observer-run-once": 2
     }
 }
