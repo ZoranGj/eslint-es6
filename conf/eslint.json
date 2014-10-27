@@ -149,6 +149,7 @@
         "yoda": [2, "never"],
 
         "em-no-repeated-sets": 0,
+        "em-no-route-states": 0,
         "em-no-view-store": 0,
         "em-observer-run-once": 0
     }
