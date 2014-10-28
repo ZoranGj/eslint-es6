@@ -148,6 +148,7 @@
         "wrap-regex": 0,
         "yoda": [2, "never"],
 
+        "em-computed-use-dependents": 0,
         "em-computed-watch-get": 0,
         "em-data-no-simple-array": 0,
         "em-no-init-override": 0,

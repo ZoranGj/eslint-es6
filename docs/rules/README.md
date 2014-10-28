@@ -179,6 +179,7 @@ The following rules are included for compatibility with [JSHint](http://jshint.c
 
 The following rules (off by default) are specific to JavaScript using [EmberJS](http://emberjs.com/) or [Ember-CLI](http://www.ember-cli.com/).
 
+* [em-computed-use-dependents](em-computed-use-dependents.md) - disallow watching unused attributes in computed properties (off by default)
 * [em-computed-watch-get](em-computed-watch-get.md) - disallow use of unwatched attributes in computed properties (off by default)
 * [em-data-no-simple-array](em-data-no-simple-array.md) - disallow use of deprecated DS.attr('array') (off by default)
 * [em-observer-run-once](em-observer-run-once.md) - disallow observers watching multiple properties outside the Ember run-loop (off by default)
