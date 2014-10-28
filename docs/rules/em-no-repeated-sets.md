@@ -70,3 +70,9 @@ function () {
     }
 }
 ```
+
+## When Not To Use It
+
+A possible exception to this rule is if you are using a boolean property as a locking mechanism (isSaving, isRefreshing, isLoading, etc) and set() it twice within the same code block (flipping true/false values).  
+
+In cases like this, just use eslint-disable to turn off the rule temporarily for that code block.
