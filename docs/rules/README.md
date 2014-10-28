@@ -179,7 +179,8 @@ The following rules are included for compatibility with [JSHint](http://jshint.c
 
 The following rules (off by default) are specific to JavaScript using [EmberJS](http://emberjs.com/) or [Ember-CLI](http://www.ember-cli.com/).
 
+* [em-data-no-simple-array](em-data-no-simple-array.md) - disallow use of deprecated DS.attr('array') (off by default)
 * [em-observer-run-once](em-observer-run-once.md) - disallow observers watching multiple properties outside the Ember run-loop (off by default)
 * [em-no-repeated-sets](em-no-repeated-sets.md) - disallow multiple calls to set() on the same object within a scope (off by default)
-* [em-no-view-store](em-no-view-store.md) - disallow views from interacting directly with the store (Ember-Data) (off by default)
 * [em-no-route-states](em-no-route-states.md) - disallow routes from having states (off by default)
+* [em-no-view-store](em-no-view-store.md) - disallow views from interacting directly with the store (Ember-Data) (off by default)
