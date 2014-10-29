@@ -26,7 +26,8 @@ eslintTester.addRuleTest("lib/rules/em-no-repeated-sets", {
         "function f() { if (this.get('foo')) { this.set('bar', 'stuff'); } this.set('things', 'stuff'); }",
         "function f() { var router = this.router; function doStuff() { router.set('bar', 'stuff'); } router.set('things', 'stuff'); if (this.get('foo')) { doStuff(); } }",
         "function f() { this.set('foo', 'bar'); Ember.set(this, 'things', 'stuff'); Ember.set(this.router, 'things', 'stuff'); }",
-        "function f() { this.set('foo', 'bar'); Em.set(this, 'things', 'stuff'); Em.set(this.router, 'things', 'stuff'); }"
+        "function f() { this.set('foo', 'bar'); Em.set(this, 'things', 'stuff'); Em.set(this.router, 'things', 'stuff'); }",
+        "function f() { this.set('foo', 'bar').save(); }"
     ],
 
     invalid: [
